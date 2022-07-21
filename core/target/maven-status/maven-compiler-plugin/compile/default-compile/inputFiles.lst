@@ -1,0 +1,10 @@
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\GameImpl.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\config\GameConfig.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\NumberGenerator.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\qualifiers\MaxNumber.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\NumberGeneratorImpl.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\Game.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\qualifiers\GuessCount.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\MessageGeneratorImpl.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\MessageGenerator.java
+D:\WORKSPACE\guess_the_number_game\core\src\main\java\spring\learning\qualifiers\MinNumber.java

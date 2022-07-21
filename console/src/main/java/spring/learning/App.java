@@ -1,14 +1,14 @@
 package spring.learning;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring.learning.config.GameConfig;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Console module for game -> console game interface
  */
 @Slf4j
+@SpringBootApplication
 public class App 
 {
     //private static final String CONFIG_LOCATION = "beans_old.xml";
@@ -17,12 +17,6 @@ public class App
     {
         log.info("Guess te number game");
 
-        // create context (container)
-        ConfigurableApplicationContext context
-                //= new ClassPathXmlApplicationContext(CONFIG_LOCATION);
-                = new AnnotationConfigApplicationContext(GameConfig.class);
-
-        // close context
-        context.close();
+        SpringApplication.run(App.class, args);
     }
 }
