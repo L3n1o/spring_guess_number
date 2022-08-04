@@ -1,0 +1,18 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head::headFragment}"/>
+    <attr sel="#game-title"
+          th:text="#{game.title}"/>
+    <attr sel="#game-over"
+          th:text="#{game.over}"/>
+    <attr sel="#result-message"
+          th:text="${__${@thymeleafParamsAdapter.getResultMessage()}__}"/>
+    <attr sel="#play-button"
+          th:href="@{__${@thymeleafParamsAdapter.getRestart}__}"
+          th:text="#{game.play.button}"/>
+    <attr sel="#home-button"
+          th:href="@{__${@thymeleafParamsAdapter.getHome()}__}"
+          th:text="#{game.home.button}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer::footerFragment}"/>
+</thlogic>

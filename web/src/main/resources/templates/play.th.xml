@@ -1,0 +1,16 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head::headFragment}"/>
+    <attr sel="#game-title"
+          th:text="#{game.title}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer::footerFragment}"/>
+    <attr sel="#main-message"
+          th:text="${__${@thymeleafParamsAdapter.getMainMessage()}__}"/>
+    <attr sel="#result-message"
+          th:text="${__${@thymeleafParamsAdapter.getResultMessage()}__}"/>
+    <attr sel="#game-form"
+          th:action="@{__${@thymeleafParamsAdapter.getPlay()}__}"/>
+    <attr sel="#enter-guess" th:text="#{game.enter.guess}"/>
+    <attr sel="#submit" th:value="#{game.submit}"/>
+</thlogic>

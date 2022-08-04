@@ -1,0 +1,10 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head::headFragment}"/>
+    <attr sel="#game-welcome-title" th:text="#{game.welcome.title}"/>
+    <attr sel="#play-button"
+          th:href="@{__${@thymeleafParamsAdapter.getPlay()}__}"
+          th:text="#{game.play.button}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer::footerFragment}"/>
+</thlogic>
